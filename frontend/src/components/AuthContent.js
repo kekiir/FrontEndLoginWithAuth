@@ -14,7 +14,7 @@ export default class AuthContent extends React.Component {
     componentDidMount() {
         request(
             "GET",
-            "/messages",
+            "/supplier/capacity",
             {}).then(
             (response) => {
                 this.setState({data: response.data})
